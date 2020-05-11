@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html> 
+<head>
+
+<meta charset=utf-8 />
+
+<title> </title>
+
+</head>
+
+<body>
+  
+         <textarea name="" id="kelime" cols="47" rows="10"></textarea><br>
+         <button onclick="bul()">Sonuç</button><p id="demo"></p>
+
+<script>
+    function bul()
+    {
+  
+       var k = document.getElementById("kelime").value;
+       k = k.replace("");
+       document.getElementById('demo').innerHTML =  k.split(' ').length;
+      
+    }
+</script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    
+
+    <form style="margin-top: 50px;margin-left: 50px;" onsubmit="tikla(this)"  >
+        <div class="form-group row">
+          <label  class="col-sm-2 col-form-label">Ad:</label>
+          <div class="col-sm-10">
+            <input type="text" name="adi" style="width: 260px;" class="form-control" >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label  class="col-sm-2 col-form-label">Soyad:</label>
+          <div class="col-sm-10">
+            <input type="text" name="soyadi" style="width: 260px;" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Email:</label>
+            <div class="col-sm-10">
+              <input type="mail" name="email" class="form-control" style="width: 260px;">
+            </div>
+        </div>
+
+        <input type="submit" name="btn"  value="Kaydet"><label id="biri" ></label>
+      </form>
+
+    <script>
+    
+    function tikla(frm)
+{
+    var adi = frm.adi.value;
+    var soyad = frm.soyadi.value;
+    var email = frm.email.value;
+    
+    if ( adi==null || adi=="" )
+    {
+       const deger1=  document.getElementById("biri")
+       deger1.style.color="#ff0000";
+       deger1.textContent="Kullanıcı adı boş bırakılamaz"
+        
+    }
+   else if ( soyad == null || soyad == "" )
+    {
+      const deger2=  document.getElementById("biri")
+      deger2.style.color="#ff0000";
+      deger2.textContent="Kullanıcı soyadı boş bırakılamazmaz"
+
+    }
+   
+   else if ( email == null || email == ""   )
+    {
+      const deger3=  document.getElementById("biri")
+      deger3.style.color="#ff0000";
+      deger3.textContent="Kullanıcı emaili boş bırakılamaz"
+      
+        
+    }      
+    else
+    {
+      const deger4=  document.getElementById("biri")
+      deger4.style.color="#ff0000";
+      deger4.textContent="Bu alanlar boş bırakılamaz"
+      
+    }
+}
+       /* const element=document.createElement("label");
+        const ekle=document.getElementById("iki")[2];
+
+        element.id="clear-todos";
+        element.className="btn btn-success"
+        
+        console.log(element)
+       const btn=document.querySelector("#btnn")
+       const deger=document.getElementsByClassName("form-control")
+       btn.onclick=(function butonn()
+       {
+           if(deger=="" && deger==null)
+           {
+               alert("bu alan boş geçilemez")
+           }
+           else
+           {
+
+           }
+       
+
+       })*/
+
+      
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

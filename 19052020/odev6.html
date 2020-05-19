@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    
+    <div class="row">
+        <div class="col-md-12">
+          <div class=" text-center " style="margin-top: 30px;margin-bottom: 60px;">
+            <i style="margin-left: 900px;" class="fas fa-user"></i> <input type="text" id="sepet">
+            <br/>
+            <br/>
+             <hr/>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+       <div class="col-md-6">
+          <div class="card   mb-3" style="border: 0px;">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+               <img src="" class="card-img"   alt="...">
+            </div>
+           <div class="col-md-7">
+               <div class="card-body">
+                  <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>GALAXY J7 PRİME</b> <br/> <p class="card-text mr-5 mt-5" ><small>2.300TL</small></p> </p>
+                  <a href="#" onclick="dön3()" class="btn btn-success">Sepete Ekle</a>
+               </div>
+           </div>
+          </div>
+          </div>
+       </div>
+
+        <div class="col-md-6">
+          <div class="card  mb-3" style=" border: 0px;">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+               <img src="" class="card-img"   alt="...">
+            </div>
+           <div class="col-md-7">
+               <div class="card-body">
+                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>GALAXY J7</b> <br/> <p class="card-text mr-5 mt-5" ><small>2.500TL</small></p> </p>
+                  <a href="#" onclick="dön2()" class="btn btn-danger">Sepete Ekle</a>
+               </div>
+           </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+       <div class="col-md-6">
+          <div class="card  mb-3" style=" border: 0px;">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+               <img src="" class="card-img"   alt="...">
+            </div>
+           <div class="col-md-7">
+               <div class="card-body">
+                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>OPPO RENO O3</b> <br/> <p class="card-text mr-5 mt-5" ><small>2.000TL</small></p> </p>
+                <a href="#" onclick="dön1()" class="btn btn-secondary">Sepete Ekle</a>
+               </div>
+           </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card  mb-3" style="border: 0px;">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+               <img src="" class="card-img"  alt="...">
+            </div>
+           <div class="col-md-7">
+               <div class="card-body">
+                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>SAMSUN A3</b> <br/> <p class="card-text mr-5 mt-5" ><small>1.700TL</small></p> </p>
+                <a href="#" onclick="dön()" class="btn btn-primary">Sepete Ekle</a>
+               </div>
+           </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <script>
+
+      const btn1=document.querySelector(".btn btn-primary");
+      const btn2=document.querySelector(".btn btn-secondary");
+      const btn3=document.querySelector(".btn btn-success");
+      const btn4=document.querySelector(".btn btn-danger");
+      const sepet=document.getElementById("sepet")
+      var adet=0;
+      
+      function dön()
+      {
+          alert("Ürün sepetinize eklenmiştir")
+          adet=adet+1;
+          document.getElementById('sepet').value=adet;
+          
+          
+          
+      }
+
+      function dön1()
+      {
+          alert("Ürün sepetinize eklenmiştir")
+          adet=adet+1;
+          document.getElementById('sepet').value=adet;
+      }
+      function dön2()
+      {
+          alert("Ürün sepetinize eklenmiştir")
+          adet=adet+1;
+          document.getElementById('sepet').value=adet;
+      }
+      function dön3()
+      {
+          alert("Ürün sepetinize eklenmiştir")
+          adet=adet+1;
+          document.getElementById('sepet').value=adet;
+      }
+       
+
+
+         
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+   <center>
+    <form style="width: 500px;height: 500px;margin-top: 50px;" id="ekle" >
+      <h3>Kayıt Formu</h3>
+        <div class="form-group">
+          <label for="formGroupExampleInput" id="ac"></label>
+          <input type="text" class="form-control"   placeholder="Ad" id="formGroupExampleInput">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2" id="aci"></label>
+          <input type="text" class="form-control"   placeholder="Soyad" id="formGroupExampleInput2" >
+        </div>
+        <input type="submit" name="btn" class="btn bg-success" id="oh" value="İleri"><label id="biri" ></label>
+    </form>
+   </center> 
+
+   <script>
+      const button=document.querySelector(".btn");
+      button.addEventListener("click",function tikla(e)
+      {
+         
+        
+          const l1=document.getElementById("ac");
+          const l3=document.getElementById("oh")
+          const l2=document.getElementById("aci");
+          const i1=document.querySelector("#formGroupExampleInput");
+          const i2=document.querySelector("#formGroupExampleInput2");
+          l1.textContent="";
+          l2.textContent="";
+          l3.value="Kaydet";
+          
+          i1.placeholder="Numara"
+          
+          i2.placeholder="Sınıf";
+          e.preventDefault();
+        
+          var inp1=document.createElement("input");
+          inp1.setAttribute("type","text");
+          inp1.setAttribute("class","form-control");
+          inp1.setAttribute("style","margin-top:50px");
+          inp1.setAttribute("style","margintop:30");
+          inp1.placeholder="Yaş"
+          
+          var eklenecek=document.getElementById("ekle")
+          eklenecek.appendChild(inp1);
+          
+          
+          button.remove();
+
+          var inp3=document.createElement("input");
+          inp3.setAttribute("style","margin-bottom:30");
+          inp3.setAttribute("type","submit");
+          inp3.setAttribute("class","btn bg-success");
+          inp3.setAttribute("name","btn1");
+          inp3.setAttribute("value","Geri");
+          var eklenecek3=document.getElementById("ekle")
+          eklenecek3.appendChild(inp3);
+
+          var inp4=document.createElement("input");
+          inp4.setAttribute("style","margin-bottom:30");
+          inp4.setAttribute("type","submit");
+          inp4.setAttribute("class","btn bg-success");
+          inp4.setAttribute("name","btn1");
+          inp4.setAttribute("value","Kaydet");
+          inp4.style.marginLeft="30px";
+          var eklenecek4=document.getElementById("ekle")
+          eklenecek4.appendChild(inp4); 
+          var eklenecek3=document.getElementById("ekle")
+          eklenecek3.appendChild(inp3);
+
+          
+
+
+
+          
+          inp4.addEventListener("click",function tikla2(c)
+          {
+            alert("Başarıyla Kaydedilmiştir.")
+            c.preventDefault();
+          })
+          
+          
+         /* const form=document.createElement("form");
+          form.style.width="500";
+          form.style.height="500";
+          form.style.marginTop="50"*/
+
+      })
+      
+
+   </script> 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

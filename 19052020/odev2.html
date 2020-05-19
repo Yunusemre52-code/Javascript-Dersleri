@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<form style="margin-left: 30px;" name="anket" action="#" class="sıfır" onsubmit="return radio();">
+ 
+   <p class="bir">SORU 1 : Hangisi futbol terimi değildir?</p>  <br/> <br/>
+    <input type="radio" name="soru1" id="bir" value="1">taç
+    <input type="radio" name="soru1" id="bir" value="2">korner
+    <input type="radio" name="soru1" id="bir" value="3">şut
+    <input type="radio" name="soru1" id="bir" value="4">aut
+    <input type="radio" name="soru1" id="bir" value="5">smaç
+    <br />
+    <br />
+
+   <p class="iki">SORU 2 : Hangisi voleybol terimi değildir?</p>  <br> <br/>
+    <input type="radio" name="soru2" id="bir" value="1">file
+    <input type="radio" name="soru2" id="bir" value="2">şutör
+    <input type="radio" name="soru2" id="bir" value="3">şut
+    <br/>
+    <br/>
+
+   <p class="üc">SORU 3 : Hangisi basketbol terimi değildir? </p> <br> <br/>
+    <input type="radio" name="soru3" id="bir" value="1">smaç
+    <input type="radio" name="soru3" id="bir" value="2">kale
+    <br/>
+    <br/>
+
+   <p class="dört">SORU 4 : Hangisi yüzmek terimi değildir?</p>  <br/> <br/>
+    <input type="radio" name="soru4" id="bir" value="1">bone
+    <input type="radio" name="soru4" id="bir" value="2">top
+    <br/>
+    <br/>
+    <input type="submit" id="buton">
+</form>
+
+<script>
+  function radio()
+  {
+     const olustur=document.createElement("p");
+     var a=document.querySelector(".sıfır");
+     olustur.id="yeniolusan";
+     a.appendChild(olustur);
+     var atama=document.anket;  
+     var sorular=0; 
+     var cevaplar=0; 
+     for (var i=0; i<atama.length; i++)
+      { 
+         if( (atama[i].type=="radio")  )
+          { 
+            
+          } 
+          document.querySelector(".sıfır").innerHTML=("Dikkat"+sorular+" Soru"+cevaplar+" Cevap");
+       } 
+  
+  } 
+
+
+
+
+
+
+
+
+   /* const btn=document.querySelector("#buton")
+    
+    
+    btn.addEventListener("click",function(e)
+    {
+        
+        const sorusayisi=4;
+        for(i=1;i<sorusayisi.lenght;i++)
+        {
+            const ank=document.querySelector("#bir");
+            for(j=0;j<ank.lenght;j++)
+            {
+                if(ank[j].checked)
+                {
+                    alert("Anketi doldurduğunuz için teşekkürler.")
+                }
+                else
+                {
+                    return false;
+                    
+                }
+            }
+        }
+        
+        
+        
+       /* alert("Anketimizi doldurduğunuz için teşekkür ederiz ")
+        e.preventDefault();
+        ank.textContent="";
+        
+
+       /* const deger=document.anket;
+        for(i=0;i<deger.lenght;i++){
+        if(esitleme[4].checked)
+        {
+          yanlis++;
+        }
+        else
+        {
+            dogru++;
+        }
+        if(esitleme[7].checked)
+        {
+            yanlis++;
+        }
+        else
+        {
+            dogru++;
+        }
+        if(esitleme[9].checked)
+        {
+            yanlis++;
+        }
+        else
+        {
+            dogru++;
+        }
+        if(esitleme[11].checked)
+        {
+            yanlis++;
+        }
+        else
+        {
+            dogru++;
+        }
+        }
+
+        alert("toplam doğru sayisi:"+dogru /n, "toplam yanlış sayısı:"+yanlis)
+       /* const dönsün=document.anket;
+        const soru=0;
+        const cevap=0;
+        for(const i=0;i<dönsün.lenght;i++)
+        {
+            if(dönsün[i].type=="radio" && dönsün[i].checked)
+         {
+            alert("Dikkat !\n" + sorular + " Soru\n" + cevaplar + " Cevap");
+         }
+         else
+         {
+            alert("Tebrikler\n" + sorular + " Soru\n" + cevaplar + " Cevap");
+         }
+            
+        }
+        
+        
+     
+
+    
+    
+
+
+
+
+
+
+
+   
+    },
+     
+    
+  }*/   
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
+
+</body>
+
+</html>

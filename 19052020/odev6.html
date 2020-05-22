@@ -34,7 +34,7 @@
             </div>
            <div class="col-md-7">
                <div class="card-body">
-                  <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>GALAXY J7 PRİME</b> <br/> <p class="card-text mr-5 mt-5" ><small>2.300TL</small></p> </p>
+                  <p class="card-text mr-5 " id="pyicar4" style="text-align: justify;margin-top: 15px;"><b>GALAXY J7 PRİME</b> <br/> <p id="pyicar44" class="card-text mr-5 mt-5" ><small>2.300TL</small></p> </p>
                   <a href="#" onclick="dön3()" class="btn btn-success">Sepete Ekle</a>
                </div>
            </div>
@@ -50,7 +50,7 @@
             </div>
            <div class="col-md-7">
                <div class="card-body">
-                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>GALAXY J7</b> <br/> <p class="card-text mr-5 mt-5" ><small>2.500TL</small></p> </p>
+                <p class="card-text mr-5 " id="pyicar3" style="text-align: justify;margin-top: 15px;"><b>GALAXY J7</b> <br/> <p id="pyicar33" class="card-text mr-5 mt-5" ><small>2.500TL</small></p> </p>
                   <a href="#" onclick="dön2()" class="btn btn-danger">Sepete Ekle</a>
                </div>
            </div>
@@ -68,7 +68,7 @@
             </div>
            <div class="col-md-7">
                <div class="card-body">
-                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>OPPO RENO O3</b> <br/> <p class="card-text mr-5 mt-5" ><small>2.000TL</small></p> </p>
+                <p class="card-text mr-5 " id="pyicar2" style="text-align: justify;margin-top: 15px;"><b>OPPO RENO O3</b> <br/> <p id="pyicar22" class="card-text mr-5 mt-5" ><small>2.000TL</small></p> </p>
                 <a href="#" onclick="dön1()" class="btn btn-secondary">Sepete Ekle</a>
                </div>
            </div>
@@ -84,7 +84,7 @@
             </div>
            <div class="col-md-7">
                <div class="card-body">
-                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;"><b>SAMSUN A3</b> <br/> <p class="card-text mr-5 mt-5" ><small>1.700TL</small></p> </p>
+                <p class="card-text mr-5 " style="text-align: justify;margin-top: 15px;" id="pyicar"><b>SAMSUN A3</b> <br/> <p id="pyicar11" class="card-text mr-5 mt-5" ><small>1.700TL</small></p> </p>
                 <a href="#" onclick="dön()" class="btn btn-primary">Sepete Ekle</a>
                </div>
            </div>
@@ -100,6 +100,15 @@
       const btn2=document.querySelector(".btn btn-secondary");
       const btn3=document.querySelector(".btn btn-success");
       const btn4=document.querySelector(".btn btn-danger");
+      const pyicar=document.querySelector("#pyicar").textContent;
+      const pyicar2=document.querySelector("#pyicar2").textContent;
+      const pyicar3=document.querySelector("#pyicar3").textContent;
+      const pyicar4=document.querySelector("#pyicar4").textContent;
+      const pyicar44=document.querySelector("#pyicar44").textContent;
+      const pyicar33=document.querySelector("#pyicar33").textContent;
+      const pyicar22=document.querySelector("#pyicar22").textContent;
+      const pyicar11=document.querySelector("#pyicar11").textContent;
+      
       const sepet=document.getElementById("sepet")
       var adet=0;
       
@@ -108,6 +117,8 @@
           alert("Ürün sepetinize eklenmiştir")
           adet=adet+1;
           document.getElementById('sepet').value=adet;
+          localStorage.setItem("ürün açıklaması",pyicar+pyicar11);
+          sessionStorage.setItem("değer",adet);
           
           
           
@@ -118,18 +129,24 @@
           alert("Ürün sepetinize eklenmiştir")
           adet=adet+1;
           document.getElementById('sepet').value=adet;
+          localStorage.setItem("ürün açıklaması",pyicar2+pyicar22);
+          sessionStorage.setItem("değer",adet);
       }
       function dön2()
       {
           alert("Ürün sepetinize eklenmiştir")
           adet=adet+1;
           document.getElementById('sepet').value=adet;
+          localStorage.setItem("ürün açıklaması",pyicar3+pyicar33);
+          sessionStorage.setItem("değer",adet);
       }
       function dön3()
       {
           alert("Ürün sepetinize eklenmiştir")
           adet=adet+1;
           document.getElementById('sepet').value=adet;
+          localStorage.setItem("ürün açıklaması",pyicar4+pyicar44);
+          sessionStorage.setItem("değer",adet);
       }
        
 

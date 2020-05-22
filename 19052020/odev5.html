@@ -16,22 +16,24 @@
 <body>
 
     <center>
-        <textarea style="margin-top: 30px;" id="sınırlama" name="sınırlama" onkeyup="dön()" onkeydown="dön()" rows="4"cols="40" placeholder="Yorumunuzu yazınız"></textarea>
-        <div id="yazdır"></div>
+       <div style="margin-top: 30px;">
+         Yazı : <br>
+         <textarea rows="10" cols="50" id="yazi"></textarea>
+         <div id="sonuc"></div>
+       </div> 
     </center>
 
     <script>
-        function dön() {
-            var karakteruzunlugu = 30;
-            var sınırlamaa = document.getElementById("sınırlama");
-            var degeratama = sınırlama.value.length;
-
-            if (degeratama > karakteruzunlugu) {
-                
-              const yazar=document.getElementById("yazdır");
-              yazar.innerHTML = "<span style='color:red' > En fazla 30 karakter girebilirsiniz.30 karakteri aştınız</span>";
-            }
-        }
+      var yazi=document.getElementById("yazi");  
+      var sonuc=document.getElementById("sonuc");  
+    
+    yazi.oninput=function(){
+        var maksimum=50;
+        this.value=this.value.substr(0,maksimum);
+        var kalankaraktersayisi= maksimum-this.value.length;
+        sonuc.style.color="#ff0000";
+        sonuc.innerHTML='Kalan Karakter Sayısı : '+kalankaraktersayisi;
+    }
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

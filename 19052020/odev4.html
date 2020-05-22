@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -11,62 +11,61 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <center>
-        <form style="width: 500px;height: 500px;margin-top: 50px;" >
-            <div class="form-group">
-              <label for="filtreleme" id="ac">Yorumunuzu Yazınız:</label>
-              <input type="text" class="form-control" id="ta" name="ta" onkeydown="filtre('ta')" onkeyup="filte('ta')">
+
+   
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-body">
+            <form style="width: 500px;height: 500px;margin-top: 50px;" >
+                <div class="form-group">
+                  <label for="filtreleme" id="ac">Yorumunuzu Yazınız:</label>
+                  <input type="text" class="form-control" id="ta" name="ta" onkeydown="filtre('ta')" onkeyup="filte('ta')">
+                </div>
+               
+                <input type="button" name="btn" class="btn bg-success" onclick="dön()" id="oh" value="Kaydet"><label id="biri" ></label>
+                <p id="demo"></p>
+            </form>
             </div>
-           
-            <input type="submit" name="btn" class="btn bg-success" onclick="dön()" id="oh" value="Kaydet"><label id="biri" ></label>
-            <p id="demo"></p>
-        </form>
-     </center> 
+      
+    </div>
+      
+   
+
+    <div class="col-md-6">
+     <div class="card-body">
+      <form style="width: 500px;height: 500px;margin-top: 50px;" >
+          <div class="form-group" id="todo-form">
+            <label for="filtreleme" id="kelime">Filtrelenecek kelimeyi yazınız:</label>
+            <input type="text" class="form-control" id="kelime1" name="kelime1" onkeydown="filtre('kelime1')" onkeyup="filte('kelime1')">
+          </div>
+         
+          <input type="submit" name="button" class="btn bg-success" onclick="dön()" id="butont" value="Kaydet"><label id="biri1" ></label>
+          <p id="demo"></p>
+
+          <ul class="list-group">
+
+          </ul>
+      </form>
+    </div>
+      </div> 
+      </div> 
+     
      <script>
 
-       function dön() 
+
+      
+
+    /*   function dön() 
        {
         
         const ta=document.getElementById('ta');
         var deger =ta.value ; 
         var tanim = deger.match(/ain/gi);
         tanim.replace("*",'/ain/i');
-        document.getElementById('demo').textContent = deger;
+        document.getElementById("demo").textContent = deger;
         
         
-       }
-
-
-
-
-
-
-
-        /* function filtre(id){
-
-         var tf = document.getElementById("ta");
-
-         var regex = /a/gi;
-
-         tf.value = tf.value.replace(regex, "");
-
-         
-
-
-
-
-         const button=document.querySelector(".btn");
-      button.addEventListener("click",function tikla(e)
-    {
-
-       function filte()
-       {
-           const doc=document.getElementById("ta");
-           const regexleme=/a/gi;
-           doc.value=doc.value.replace("*",regexleme);
-           
-       }
-    }) */
+       } */
      </script>
 
 

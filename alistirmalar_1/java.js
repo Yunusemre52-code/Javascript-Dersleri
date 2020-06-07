@@ -22,19 +22,29 @@ const konus=(name,text) =>
 console.log("ahmet","merhaba");
 
 //2.soru
-const obje=
+const obje=[
+    {
+        ad:"ahmet",
+        soyad:"lili"
+    },
+    {
+        ad:"mehmet",
+        soyad:"asci"
+    },
+    {
+        ad:"elif",
+        soyad:"gedek"
+    }
+];
+let dizicagir=() =>
 {
-    ad:"Mustafa",
-    soyad:"Lili",
-    adı:"Ali",
-    soyad:"Engin",
-    adıı:"Mehmet",
-    soyad:"Ocak"
-};
-let map=new Map();
-console.log( map.get(obje.ad));
-console.log( map.get(obje.adı));
-console.log( map.get(obje.adıı));
+    let map=new Map();
+    console.log( map.get(obje[0].ad));
+    console.log( map.get(obje[1].ad));
+    console.log( map.get(obje[2].ad));
+}
+dizicagir();
+
 
 
 //3.soru
@@ -50,8 +60,9 @@ const {title,widht,height}=options;
 //b.)
 const {title}=options;
 //c.)
-const {title}=options;
-const obje={...options};
+const {title,...spread}=options;
+console.log(spread,title);
+
 
 //4.)
 let veri=
@@ -77,6 +88,16 @@ let maaslar=
     "ahmet":300,
     
 }
+let enbuyuk=201;
+
+    if(maaslar>enbuyuk)
+    {
+        console.log("en yuksek maaş: "+value);
+    }
+    else
+    {
+        
+    }
 
 //6.soru
 let isimler= new Set(["ahmet","ali","ahmet","ayşe","ali","ahmet","veli","ayşe"]);
